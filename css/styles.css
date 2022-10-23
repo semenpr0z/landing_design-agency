@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap');
-@import url('http://fonts.cdnfonts.com/css/yeseva-one');
-@font-face{
-            font-family: Yeseva One;
-            font-style:normal;
-            font-weight:400;
-            src:local('Yeseva One'),
-            url(../fonts/YesevaOne-Regular.ttf) format('ttf')
-        }
-
+@import url('https://fonts.cdnfonts.com/css/yeseva-one');
 body{
     margin: 0;
     font-family: 'Nunito Sans', sans-serif;

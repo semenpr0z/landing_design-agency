@@ -24,6 +24,17 @@ body * {
     line-height: 15px;
     text-align: center;
 }
+.button-transparent{
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: rgba(28,28,28,0)
+}
 .header{
     background-color: #131313;   
 }
@@ -119,6 +130,11 @@ main{
                 margin-top: 16px;
             }
             .caculate-the-cost{
-                font-family: 'Nunito Sans';
-                padding: 19px 42px 20px 41px;
+                min-height: 51px;
+                min-width: 207px;
+            }
+            .submit-your-application{
+                min-height: 51px;
+                min-width: 207px;
+                margin-left: 20px;
             }

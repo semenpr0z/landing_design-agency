@@ -147,7 +147,7 @@ main{
             height: 1074px;
         }
         .completed-projects{
-            height: 552px;
+            
             padding-left: 42px;
             padding-right: 42px;
         }
@@ -167,6 +167,11 @@ main{
                     text-transform: uppercase;
                     color: rgba(255, 255, 255, 0.3);
                 }
+                    .selected{
+                        padding-bottom: 6px;
+                        border-bottom: 1px solid #E3B873;
+                        color: #E3B873 !important;
+                    }
             .pre-container-completed-projects{
                 display: flex;
                 justify-content: space-between;
@@ -196,6 +201,7 @@ main{
                         display: flex;
                         justify-content: space-between;
                         padding-top: 42px;
+                        padding-bottom: 73px;
                     }
                         .characteristic{
                             
@@ -220,6 +226,23 @@ main{
                                     line-height: 21px;
                                     color: #FFFFFF;
                                 }
+                    .completed-projects-navigation-arrows{
+                        max-width: 275px;
+                        max-height: 13px;
+                        display: flex;
+                        justify-content: space-between;
+                        }
+                        .arrow{
+                                        
+                        }
+                        .completed-projects-navigation-arrows-rectangles{
+                            display: flex;
+                            min-width: 83px;
+                            justify-content: space-between;
+                        }
+                            .rectangle{
+                                
+                            }
                 .completed-projects-navigation-and-img{
 
                 }                
@@ -240,5 +263,5 @@ main{
                                 color: rgba(255, 255, 255, 0.3);
                                 }        
                     .img-completed-projects{
-                        padding-top: 53px;
+                        padding-top: 47px;
                     }

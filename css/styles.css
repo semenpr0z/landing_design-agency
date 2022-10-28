@@ -35,6 +35,16 @@ body * {
     color: #FFFFFF;
     background-color: rgba(28,28,28,0)
 }
+
+.title1{
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: 'Yeseva One', sans-serif;
+}
+
+
+
 .header{
     background-color: #131313;   
 }
@@ -96,7 +106,7 @@ main{
         padding-top: 194px;
         position: relative;
     }
-        .img-hero-content{
+        .content{
             position: relative;
             z-index: 1;
             padding-left: 42px;
@@ -110,14 +120,11 @@ main{
             bottom: 0;
             background-color: rgba(0, 0, 0, .7);
         }
-            .title1{
+            .first{
                 margin: 0;
                 font-weight: 400;
                 font-size: 40px;
                 line-height: 53px;
-                text-transform: uppercase;
-                color: #FFFFFF;
-                font-family: 'Yeseva One', sans-serif;
                 max-width: 676px;
             }
                 .subtitle1{
@@ -265,3 +272,61 @@ main{
                     .img-completed-projects{
                         padding-top: 47px;
                     }
+        .online-control{
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+            .second{
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 28px;
+                text-align: center;
+                margin-top: 92px;
+            }
+            .online-control-videocamera-separator{
+                display: flex;
+                max-width: 160px;
+                margin: 0 auto;
+                justify-content: center;
+            }
+                .online-control-videocamera-separator1{
+                    display: flex;
+                }
+                    .videocamera{
+                        margin: auto 0;
+                    }
+                    .stick{
+                        margin: auto 9px;
+                    }
+            .online-control-video{
+                width: 817px;
+                height: 434px;
+                margin: 31px auto;
+                background-image: url('../images/image-online_control.png');
+                position: relative;
+                z-index: 2;
+                display: flex;
+            }
+                .black{
+                    margin: 0;
+                    z-index: 3;
+                    position: absolute;
+                    background: rgba(0, 0, 0, 0.8);
+                }
+                .play{
+                    margin: 0;
+                    z-index: 4;
+                    position: absolute;
+                    background-image: none;
+                    width: 168px;
+                    right: 40%;
+                }
+            .paragrapf{
+                
+            }
+                .paragrapf-stick{
+                    
+                    margin: 31px auto 34px auto;
+                    width: 55px;
+                }
+                    

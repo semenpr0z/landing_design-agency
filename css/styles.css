@@ -13,7 +13,6 @@ body * {
 }
 .button-light{
     background: #E3B873;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     border-radius: 2px;
     outline: 0;
     border: 0;
@@ -95,6 +94,7 @@ body * {
             padding: 13px 33px;
             margin-left: 45px;
             text-transform: uppercase;
+            box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
         }
 main{
 
@@ -140,6 +140,7 @@ main{
             .caculate-the-cost{
                 min-height: 51px;
                 min-width: 207px;
+                box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
             }
             .submit-your-application{
                 min-height: 51px;
@@ -331,4 +332,44 @@ main{
                     margin: 31px auto 34px auto;
                     width: 55px;
                 }
-                    
+                .text4{
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 37px;
+                    text-align: center;
+                    color: #363636;
+                }
+            .input{
+                display: flex;
+                flex-direction: row;
+                max-width: 769px;
+            }
+                .name-number-container{
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 75px;
+                    padding-bottom: 37px;
+                }
+                    .Name{
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 21px;
+                        color: rgba(54, 54, 54, 0.5);
+                    }
+                    .input-name-and-number{
+                        width: 231px;
+                        border: none;
+                        border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+                        outline: none
+                    }
+                    input::placeholder{
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 23px;
+                        color: #363636;
+                    }
+                    .submit{
+                        width: 200px;
+                        height: 51px;
+                        font-style: normal;
+                    }

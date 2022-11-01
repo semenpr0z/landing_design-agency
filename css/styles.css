@@ -38,11 +38,21 @@ body * {
 .title1{
     font-weight: 400;
     text-transform: uppercase;
-    color: #FFFFFF;
     font-family: 'Yeseva One', sans-serif;
 }
 
-
+.separator{
+    display: flex;
+    max-width: 160px;
+    margin: 0 auto;
+    justify-content: center;
+}
+    .separator1{
+        display: flex;
+    }
+        .stick{
+            margin: auto 9px;
+        }
 
 .header{
     background-color: #131313;   
@@ -120,12 +130,11 @@ main{
             bottom: 0;
             background-color: rgba(0, 0, 0, .7);
         }
-            .first{
-                margin: 0;
-                font-weight: 400;
+            .Turnkey-Repair{
                 font-size: 40px;
                 line-height: 53px;
                 max-width: 676px;
+                color: #FFFFFF;
             }
                 .subtitle1{
                     color: #E3B873;
@@ -187,14 +196,10 @@ main{
                 .text-completed-projects{
 
                 }
-                    .title2{
-                        font-family: 'Yeseva One';
-                        font-style: normal;
-                        font-weight: 400;
+                    .title-Completed-projects{
                         font-size: 27px;
                         line-height: 37px;
                         letter-spacing: -0.07em;
-                        text-transform: uppercase;
                         color: #E3B873;
                         padding-top: 160px;
                         margin: 0px;
@@ -279,28 +284,13 @@ main{
             display: flex;
             flex-direction: column;
         }
-            .second{
-                font-weight: 400;
+            .title-online-control{
                 font-size: 20px;
                 line-height: 28px;
                 text-align: center;
                 margin-top: 92px;
+                color: #FFFFFF;
             }
-            .online-control-videocamera-separator{
-                display: flex;
-                max-width: 160px;
-                margin: 0 auto;
-                justify-content: center;
-            }
-                .online-control-videocamera-separator1{
-                    display: flex;
-                }
-                    .videocamera{
-                        margin: auto 0;
-                    }
-                    .stick{
-                        margin: auto 9px;
-                    }
             .online-control-video{
                 width: 817px;
                 height: 434px;
@@ -403,3 +393,75 @@ main{
                             .checkbox:checked + .fake::before{
                                 opacity: 1;
                             }
+        .types-of-repair{
+            margin-top: 75px;
+        }
+            .title-types-of-repair{
+                font-size: 20px;
+                line-height: 28px;
+                text-align: center;
+                color: #181818;
+                margin: 0px 0px 13px 0px;
+            }
+            .types-of-repair-catalog{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 31px;
+            }
+                .types-of-repair-catalog-item{
+                    
+                }
+                    .types-of-repair-catalog-item-container{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .types-of-repair-catalog-item1{
+                        width: 392px;
+                        height: 421px;
+                    }
+                        .types-of-repair-catalog-item-content{
+                            margin-top: -127px;
+                        }
+                            .types-of-repair-catalog-item-content-text{
+                                background-color: #FFFFFF;
+                                width: 330px;
+                                height: 286px;
+                                margin: 0 auto;
+                                
+                            }
+                                .title-types-of-repair-catalog-item{
+                                    margin: 0px auto auto 34px;
+                                    padding-top: 25px;
+                                    text-transform: none;
+                                }
+                                .list{
+                                    list-style: none;
+                                    padding: 0;
+                                    margin-left: 34px;
+                                }
+                                    .list li{
+                                        font-weight: 400;
+                                        font-size: 13px;
+                                        line-height: 27px;
+                                        color: #959595;
+                                    }
+                                .price{
+                                    padding: 17px;
+                                    width: 228px;
+                                    text-transform: uppercase;
+                                    font-family: 'Yeseva One';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 18px;
+                                    line-height: 25px;
+                                    border-radius: 0px;
+                                }
+                    .background-Redecorating{
+                        background-image: url('../images/redecorating.jpg');
+                    }
+                    .background-Overhaul{
+                        background-image: url('../images/overhaul.jpg');
+                    }
+                    .background-Designer-Repair{
+                        background-image: url('../images/designer-repair.jpg');
+                    }

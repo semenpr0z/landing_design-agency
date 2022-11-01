@@ -342,13 +342,15 @@ main{
             .input{
                 display: flex;
                 flex-direction: row;
-                max-width: 769px;
+                width: 769px;
+                justify-content: space-between;
             }
                 .name-number-container{
                     display: flex;
                     flex-direction: column;
                     padding-top: 75px;
                     padding-bottom: 37px;
+                    margin: 0;
                 }
                     .Name{
                         font-weight: 400;
@@ -360,7 +362,7 @@ main{
                         width: 231px;
                         border: none;
                         border-bottom: 1px solid rgba(54, 54, 54, 0.3);
-                        outline: none
+                        outline: none;
                     }
                     input::placeholder{
                         font-weight: 400;
@@ -372,4 +374,32 @@ main{
                         width: 200px;
                         height: 51px;
                         font-style: normal;
+                        padding: 0;
+                        margin-top: 73px;
                     }
+            .first-checkbox{
+                margin: 0 auto;
+            }
+                    .label {
+                        cursor: pointer;
+                    }
+                        .checkbox{
+                            display: none;
+                        }
+                        .fake{
+                            display: inline-flex;
+                            width: 18px;
+                            height: 18px;
+                            background: #E3B873;
+                            color: #fff;
+                            justify-content: center;
+                        }
+                            .fake::before{
+                                content:"\2714";
+                                opacity: 0;
+                                transition: .2s;
+                                font-size: small;
+                            }
+                            .checkbox:checked + .fake::before{
+                                opacity: 1;
+                            }

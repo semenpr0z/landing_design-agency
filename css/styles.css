@@ -354,7 +354,7 @@ main{
                         border-bottom: 1px solid rgba(54, 54, 54, 0.3);
                         outline: none;
                     }
-                    input::placeholder{
+                    .input-name-and-number::placeholder{
                         font-weight: 400;
                         font-size: 14px;
                         line-height: 23px;
@@ -465,12 +465,16 @@ main{
                     .background-Designer-Repair{
                         background-image: url('../images/designer-repair.jpg');
                     }
-            .benifits-and-request-container
+            .benifits-and-request-container{
+                display: flex;
+                margin-top: 240px;
+                justify-content: space-between;
+            }
                 .benfits{
                     background-image: url('../images/city.png');
                     width: 703px;
                     height: 645px;
-                    margin-top: 240px;
+                    
                 }
                     .benifits-list{
                         display: flex;
@@ -509,4 +513,105 @@ main{
                                 display: flex;
                                 align-items: center;
                                 padding-left: 13px;
+                            }
+                .request{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 85px;
+                    min-width: 506px;
+                    min-height: 509px;
+                    max-height: 509px;
+                    background: #131313;
+                    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+                }
+                    .text4{
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 26px;
+                        color: #FFFFFF;
+                        margin: 28px auto 28px;
+                    }
+                    .request-input{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        width: 408px;
+                        height: 244px;
+                    }
+                        .request-container{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            height: 482px;
+                        }
+                            .name-number-container-request{
+                                display: flex;
+                                flex-direction: column;
+                            }
+                                .Name1{
+                                    font-weight: 400;
+                                    font-size: 13px;
+                                    line-height: 21px;
+                                    color: rgba(255, 255, 255, 0.5);
+                                }
+                                .input-name-and-number1{
+                                    width: 408px;
+                                    border: none;
+                                    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+                                    outline: none;
+                                    background-color: #131313;
+                                    color: #FFFFFF;
+                                }
+                                .input-name-and-number1::placeholder{
+                                    color: #FFFFFF;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 23px;
+                                }
+                        .second-checkbox{
+                            width: 258px;
+                        }
+                            .label2 {
+                                cursor: pointer;
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                                .checkbox2{
+                                    display: none;
+                                }
+                                .fake2{
+                                    display: inline-flex;
+                                    width: 18px;
+                                    height: 18px;
+                                    background: #E3B873;
+                                    color: #fff;
+                                    justify-content: center;
+                                }
+                                    .fake2::before{
+                                        content:"\2714";
+                                        opacity: 0;
+                                        transition: .2s;
+                                        font-size: small;
+                                    }
+                                    .checkbox2:checked + .fake2::before{
+                                        opacity: 1;
+                                    }
+                        .button-container{
+                            text-align: right;
+                        }
+                            .сall-the-measurer{
+                                min-width: 213px;
+                                min-height: 51px;
+                                max-width: 213px;
+                                max-height: 51px;
+                                box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+                                text-transform: uppercase;
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 13px;
+                                line-height: 21px;
+                            }
+                            .сall-the-measurer::value{
+
                             }

@@ -156,9 +156,7 @@ main{
                 min-width: 207px;
                 margin-left: 20px;
             }
-    .completed-projects-and-online-control{
-        position: relative;
-    }
+    
         .black-background{
             background-color: #131313;
             height: 1074px;
@@ -278,6 +276,9 @@ main{
                     .img-completed-projects{
                         padding-top: 47px;
                     }
+    .online-conrol-margin{
+        margin-top: -416px;
+    }
         .online-control{
             max-width: 1440px;
             margin: 0 auto;
@@ -528,7 +529,7 @@ main{
                         background: #131313;
                         box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
                     }
-                        .text4{
+                        .text5{
                             font-weight: 400;
                             font-size: 18px;
                             line-height: 26px;
@@ -642,3 +643,25 @@ main{
                         text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
                         margin: 0px 0px 0px 25px;
                     }
+            .wildest-fantasies{
+                background-image: url('../images/image-fantasies.jpg');
+                background-size: cover;
+                margin-top: 242px;
+                height: 864px;
+                position: relative;
+            }
+                .content1{
+                    position: relative;
+                    z-index: 1;
+                }
+                .wildest-fantasies-container{
+                    background-image: none;
+                }
+                .wildest-fantasies-overlay{
+                    content: "";
+                    position: absolute;
+                    top: 0px;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
+                }

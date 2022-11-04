@@ -10,6 +10,7 @@ body * {
 .container{
     max-width: 1440px;
     margin: auto;
+    padding: 0px 100px;
 }
 .button-light{
     background: #E3B873;
@@ -62,6 +63,7 @@ body * {
         justify-content: space-between;
         height: 83px;
         align-items: center;
+        padding: 0px 41px;
     }
         .logo{
             color: #E3B873;
@@ -119,7 +121,6 @@ main{
         .content{
             position: relative;
             z-index: 1;
-            padding-left: 42px;
         }
         .hero-overlay{
             content: "";
@@ -162,9 +163,7 @@ main{
             height: 1074px;
         }
         .completed-projects{
-            
-            padding-left: 42px;
-            padding-right: 42px;
+              
         }
             .completed-projects-navigation{
                 display: flex;
@@ -475,7 +474,7 @@ main{
                     background-image: url('../images/city.png');
                     width: 703px;
                     height: 600px;
-                    
+                    margin-left: -100px;
                 }
                     .benifits-list{
                         display: flex;
@@ -622,6 +621,7 @@ main{
                     margin-top: 38px;
                     height: 72px;
                     align-items: center;
+                    padding-left: 31px;
                 }
                     .symbol{
                         background: #E3B873;
@@ -655,8 +655,75 @@ main{
                     z-index: 1;
                 }
                 .wildest-fantasies-container{
-                    background-image: none;
+                    display: flex;
+                    justify-content: space-between;
                 }
+                    .text-container{
+                        width: 299px;
+                    }
+                        .wildest-fantasies1{
+                            font-size: 27px;
+                            line-height: 37px;
+                            color: #E3B873;
+                            padding-top: 137px;
+                            margin: 0;
+                        }
+                        .wildest-fantasies-list{
+                            list-style: none;
+                            padding: 0;
+                            height: 516px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            margin: 47px 0px 0px 0px;
+                        }
+                            .wildest-fantasies-list-item{
+                                font-weight: 400;
+                                font-size: 20px;
+                                line-height: 38px;
+                                color: #FFFFFF;
+                                width: max-content;
+                                height: 33px;
+                            }
+                                .selected-disign{
+                                    color: #E3B873;
+                                    border-bottom: 1px solid #E3B873;
+                                }
+                    .image-container-wildest-fantasies{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 751px;
+                    }
+                        .image-container1-wildest-fantasies{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            height: 945px;
+                            margin-top: -41px;
+                        }
+                            .image-clocks{
+                                width: 354px;
+                                height: 557px;
+                            }
+                            .image-tv{
+                                width: 354px;
+                                height: 349px;
+                            }
+                        .image-container2-wildest-fantasies{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            height: 936px;
+                            margin-top: -112px;
+                        }
+                            .image-sofa{
+                                width: 354px;
+                                height: 275px;
+                            }
+                            .image-table{
+                                width: 354px;
+                                max-width: 624px;
+                            }
                 .wildest-fantasies-overlay{
                     content: "";
                     position: absolute;
@@ -665,3 +732,94 @@ main{
                     height: 100%;
                     background: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
                 }
+            .our-clients{
+                margin-top: 110px;
+            }
+                .text-container2{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    align-items: center;
+                }
+                    .our-clients-title{
+                        margin: 0;
+                    }
+                    .our-clients-separator{
+                        margin-top: 13px;
+                    }
+                    .text5{
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 29px;
+                        color: #363636;
+                        margin: 24px auto 0 auto;
+                    }
+                .clients-container{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 63px;
+                }
+                    .clients-container-item{
+                        display: flex;
+                        flex-direction: column;
+                        width: 428px;
+                        height: 376px;
+                    }
+                        .clients-container1{
+                            padding-left: 20px;
+                        }
+                        .clients-container-item-photo-and-name{
+                            display: flex;
+                        }
+                            .photo-of-item{
+                                height: 76px;
+                                width: 76px;
+                                border-radius: 50%;
+                            }
+                            .title4{
+                                font-family: 'Yeseva One';
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 23px;
+                                color: #181818;
+                                padding-left: 23px;
+                            }
+                        .clients-container-item-text{
+
+                        }
+                            .clients-container-item-text-p{
+                                font-family: 'Nunito Sans';
+                                font-weight: 400;
+                                font-size: 13px;
+                                line-height: 180%;
+                                color: #959595;
+                            }
+                        .clients-container-item-span{
+                            background-color: #E3B873;
+                            width: 293px;
+                            min-height: 54px;
+                            margin-top: 63px;
+                            display: flex;
+                        }
+                            .clients-container-item-span1{
+                                display: flex;
+                                justify-content: space-evenly;
+                                width: 135px;
+                                align-items: center;
+                            }
+                                .clients-container-item-span-image{
+                                    width: 32px;
+                                    height: 32px;
+                                }
+                                .clients-container-item-span-text{
+                                    font-family: 'Yeseva One';
+                                    font-weight: 400;
+                                    font-size: 17px;
+                                    line-height: 24px;
+                                    text-transform: uppercase;
+                                    color: #FFFFFF;
+                                }
+                            .border-span{
+                                border-left: 0.75px solid #FFFFFF;
+                                width: 158px;
+                            }

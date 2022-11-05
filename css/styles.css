@@ -926,3 +926,9 @@ main{
                     height: 100%;
                     background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
                 }
+.footer{
+    background-color: #131313;
+}
+    .footer-content{
+        height: 133px;
+    }

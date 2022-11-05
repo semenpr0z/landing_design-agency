@@ -534,6 +534,7 @@ main{
                             line-height: 26px;
                             color: #FFFFFF;
                             margin: 28px auto 28px;
+                            text-align: center;
                         }
                         .request-input{
                             display: flex;
@@ -566,7 +567,7 @@ main{
                                         background-color: #131313;
                                         color: #FFFFFF;
                                     }
-                                    .input-name-and-number1::placeholder{
+                                    .placeholder-black::placeholder{
                                         color: #FFFFFF;
                                         font-weight: 400;
                                         font-size: 14px;
@@ -747,7 +748,7 @@ main{
                     .our-clients-separator{
                         margin-top: 13px;
                     }
-                    .text5{
+                    .text6{
                         font-weight: 400;
                         font-size: 18px;
                         line-height: 29px;
@@ -763,7 +764,7 @@ main{
                         display: flex;
                         flex-direction: column;
                         width: 428px;
-                        height: 376px;
+                        height: 435px;
                     }
                         .clients-container1{
                             padding-left: 20px;
@@ -823,3 +824,105 @@ main{
                                 border-left: 0.75px solid #FFFFFF;
                                 width: 158px;
                             }
+            .contacts-and-map{
+                height: 953px;
+                background-image: url('../images/image-section-contacts-and-map.jpg');
+                margin-top: 354px;
+                background-size: cover;
+                position: relative;
+            }
+                .contacts-and-map-container{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                    .have-any-questions{
+                        background-color: #181818;
+                        width: 883px;
+                        height: 445px;
+                        margin-top: -222px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                        .have-any-questions-title{
+                            font-size: 20px;
+                            line-height: 28px;
+                            color: #FFFFFF;
+                            text-align: center;
+                            margin: 34px auto 45px auto;
+                        }
+                        .have-any-questions-2-inputs{
+                            display: flex;
+                            justify-content: center;
+                            flex-direction: column;
+                        }
+                            .have-any-questions-2input-container{
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                                .have-any-questions-2input{
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+                                    .Name2{
+                                        font-weight: 400;
+                                        font-size: 13px;
+                                        line-height: 21px;
+                                        color: rgba(255, 255, 255, 0.5);
+                                    }
+                                    .input-name-and-number2{
+                                        width: 231px;
+                                        outline: none;
+                                        border: none;
+                                        background-color: #181818;
+                                        color: #FFFFFF;
+                                        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+                                    }
+                            .one-input{
+                                margin: 48px 0px;
+                            }
+                                .new-width{
+                                    width: 516px;
+                                }
+                        .third-checkbox{
+                            width: 285px;
+                        }
+                        .second-submit{
+                            margin-top: 50px;
+                            box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.1);
+                        }
+                    .contacts{
+                        margin-top: 50px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                        .contacts-title{
+                            margin: 0;
+                            font-size: 20px;
+                            line-height: 28px;
+                            color: #E3B873;
+                            text-align: center;
+                        }
+                        .social-networks{
+                            margin-top: 26px;
+                            width: 71px;
+                            display: flex;
+                            justify-content: space-between
+                        }
+                            .image-contacts{
+                                height: 28px;
+                                width: 28px;
+                            }
+                    .map{
+                        margin-top: 43px;
+                    }
+                .contacts-and-map-overlay{
+                    content: "";
+                    position: absolute;
+                    top: 0px;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+                }

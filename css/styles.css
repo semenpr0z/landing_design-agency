@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap');
 @import url('https://fonts.cdnfonts.com/css/yeseva-one');
+
+@media screen and (max-width: 1299px) {
+    .header-navigation{
+        display: none !important;
+    }
+    .number{
+        text-decoration-line: none !important;
+        color: #FFFFFF !important;
+    }
+    .request-a-call{
+        display: none !important;
+    }
+}
+
 body{
     margin: 0;
     font-family: 'Nunito Sans', sans-serif;
@@ -416,7 +430,7 @@ main{
                         flex-direction: column;
                     }
                     .types-of-repair-catalog-item1{
-                        width: 392px;
+                        max-width: 392px;
                         height: 421px;
                     }
                         .types-of-repair-catalog-item-content{

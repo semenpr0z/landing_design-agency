@@ -2,19 +2,89 @@
 @import url('https://fonts.cdnfonts.com/css/yeseva-one');
 
 @media screen and (max-width: 1299px) {
-    .logo{
-        margin: 0 !important;
+    .container{
+        padding: 0px 18px !important;
     }
-    .header-navigation{
-        display: none !important;
+
+    .header-content{
+        height: 57px !important;
     }
-    .number{
-        text-decoration-line: none !important;
-        color: #FFFFFF !important;
+        .logo{
+            margin: 0 !important;
+        }
+        .header-navigation{
+            display: none !important;
+        }
+        .number{
+            text-decoration-line: none !important;
+            color: #FFFFFF !important;
+        }
+        .request-a-call{
+            display: none !important;
+        }
+    .img-hero{
+        padding-top: 85px !important;
+        height: 476px !important;
     }
-    .request-a-call{
-        display: none !important;
+        .img-hero-content{
+            display: flex;
+            flex-direction: column;
+        }
+            .text1-p{
+                margin: 0 !important;
+                line-height: 19.02px !important;
+            }
+                .br{
+                    display: none !important;
+                }
+            .caculate-the-cost{
+                margin-top: 32px;
+            }
+            .submit-your-application{
+                margin: 26px 0px 0px 0px !important;
+            }
+    .black-background{
+        height: 1553px !important;
     }
+        .pre-container-completed-projects{
+            flex-direction: column;
+            align-items: center;
+        }
+            .title-Completed-projects{
+                padding-top: 36px !important;
+                text-align: center;
+            }
+            .text2{
+                text-align: center;
+                padding-top: 0px !important;
+                margin-top: 22px !important;
+                line-height: 17.43px !important;
+                height: 86px;
+            }
+            .mobile-image-completed-projects{
+                display: flex !important;
+            }
+            .characteristics-completed-projects{
+                padding: 0px !important;
+            }
+                .characteristics2{
+                    height: 139px;
+                }
+                    .title3{
+                        margin: 0px 0px 11px;
+                        font-size: 14px !important;
+                        line-height: 19.4px !important;
+                    }
+                    .text3{
+                        font-size: 11px;
+                        line-height: 14.94px !important;
+                    }
+        .completed-projects-navigation-and-img{
+            display: none !important;
+        }
+        .completed-projects-navigation-arrows{
+            display: none !important;
+        }
 }
 
 body{
@@ -153,6 +223,7 @@ main{
                 line-height: 53px;
                 max-width: 676px;
                 color: #FFFFFF;
+                margin: 0px 0px 19px 0px;
             }
                 .subtitle1{
                     color: #E3B873;
@@ -223,7 +294,22 @@ main{
                         font-size: 14px;
                         line-height: 27px;
                         color: #FFFFFF;
+                        margin: 0;
+                        padding-top: 34px;
                     }
+                    .mobile-image-completed-projects{
+                        display: none;
+                        background-image: url('../images/image-completed-projects2.jpg');
+                        width: 340px;
+                        height: 242px;
+                        background-size: cover;
+                        justify-content: space-between;
+                        padding: 0px 14px;
+                        margin: 36px auto;
+                    }
+                        .ellipse-right-left{
+                            width: 36px;
+                        }
                     .characteristics-completed-projects{
                         display: flex;
                         justify-content: space-between;

@@ -211,6 +211,9 @@ main{
                         margin: 0;
                         padding-top: 34px;
                     }
+                        .no-margin{
+                            padding: 0;
+                        }
                     .mobile-image-completed-projects{
                         display: none;
                         background-image: url('../images/image-completed-projects2.jpg');
@@ -490,7 +493,7 @@ main{
                     }
             .benifits-and-request-container{
                 display: flex;
-                margin-top: 240px;
+                margin-top: 230px;
                 justify-content: space-between;
             }
                 .benfits{
@@ -713,6 +716,9 @@ main{
                                     color: #E3B873;
                                     border-bottom: 1px solid #E3B873;
                                 }
+                    .image-mobile{
+                        display: none;
+                    }
                     .image-container-wildest-fantasies{
                         display: flex;
                         justify-content: space-between;
@@ -949,6 +955,9 @@ main{
                     height: 100%;
                     background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
                 }
+        .contacts-and-map-mobile{
+            display: none;
+        }
 .footer{
     background-color: #131313;
 }
@@ -1106,7 +1115,6 @@ main{
                         color: #FFFFFF;
                     }
                 .submit{
-                    width: 50%;
                     margin: 80px auto 0px;
                 }
         .types-of-repair-catalog{
@@ -1118,9 +1126,7 @@ main{
                 display: flex;
                 justify-content: center;
             }
-            .margin59{
-                margin-top: 59px;
-            }
+            
                 .types-of-repair-catalog-item-container{
                     
                 }
@@ -1143,3 +1149,104 @@ main{
                     font-size: 15px;
                     padding: 11px;
                 }
+        .benifits-and-request{
+            display: none;
+        }
+        .wildest-fantasies{
+            background-image: none;
+            margin: 0;
+            height: auto;
+        }
+            .wildest-fantasies-container{
+                flex-direction: column;
+            }
+                .text-container{
+                    width: 100%;
+                }
+                    .wildest-fantasies1{
+                        padding: 0;
+                        text-align: center;
+                        margin: 0 auto;
+                    }
+                .wildest-fantasies-list{
+                    display: none;
+                }
+                .image-container-wildest-fantasies{
+                    display: none;
+                }
+                .image-mobile{
+                    background-image: url('../images/image-fantasies.jpg');
+                    display: flex;
+                    width: 340px;
+                    height: 242px;
+                    background-size: cover;
+                    justify-content: space-between;
+                    padding: 0px 14px;
+                    margin: 36px auto 0px;
+                }
+            .wildest-fantasies-overlay{
+                display: none;
+            }
+        .our-clients{
+            display: none;
+        }
+        .contacts-and-map{
+            display: none;}
+        .contacts-and-map-mobile{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: #181818;
+            padding: 173px 0px 49px;
+            margin-top: -121px;
+        }
+            .have-any-questions-title{
+                margin: 0;
+            }
+            .have-any-questions-2input{
+                width: 100%;
+            }
+            .one-input{
+                margin: 52px 0px 0px;
+            }
+                .input-name-and-number2{
+                    width: 100%;
+                    border-bottom: 1px solid #FFFFFF;
+                }
+                .third-checkbox{
+                    width: 100%;
+                    margin-top: 21px;
+                }
+                    .label2{
+                        justify-content: flex-start;
+                    }
+                    .text-third-checkbox{
+                        font-size: 14px;
+                        line-height: 22.92px;
+                        margin-left: 8px;
+                        color: #FFFFFF;
+                    }
+                .submit{
+                    width: 100%;
+                }
+                .second-submit{
+                    margin: 67px 0px 0px;
+                }
+            .map{
+                width: 100%;
+                margin: 46px 0px 41px;
+            }
+            .contacts-title{
+                font-size: 18px;
+                line-height: 24.95px;
+            }
+            .social-networks{
+                width: 98px;
+            }
+                .image-contacts{
+                    width: 39px;
+                    height: 39px;
+                }
+        .footer{
+            display: none;
+        }

@@ -454,6 +454,8 @@ main{
                                     margin: 0px auto auto 34px;
                                     padding-top: 25px;
                                     text-transform: none;
+                                    font-size: 18px;
+                                    line-height: 24.95px;
                                 }
                                 .list{
                                     list-style: none;
@@ -1106,4 +1108,38 @@ main{
                 .submit{
                     width: 50%;
                     margin: 80px auto 0px;
+                }
+        .types-of-repair-catalog{
+            flex-direction: column;
+            margin-top: 40px;
+        }
+            .types-of-repair-catalog-item{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .margin59{
+                margin-top: 59px;
+            }
+                .types-of-repair-catalog-item-container{
+                    
+                }
+                .types-of-repair-catalog-item1{
+                    width: 340px;
+                }
+                .title-types-of-repair-catalog-item{
+                    font-size: 15px;
+                    line-height: 20.79px;
+                }
+                .types-of-repair-catalog-item-content-text{
+                    margin: 0;
+                    width: 270px;
+                    height: 241px;
+                }
+                    .list li{
+                        line-height: 22.07px    ;
+                    }
+                .price{
+                    font-size: 15px;
+                    padding: 11px;
                 }

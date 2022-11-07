@@ -2,6 +2,9 @@
 @import url('https://fonts.cdnfonts.com/css/yeseva-one');
 
 @media screen and (max-width: 1299px) {
+    .logo{
+        margin: 0 !important;
+    }
     .header-navigation{
         display: none !important;
     }

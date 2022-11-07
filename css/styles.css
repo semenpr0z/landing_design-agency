@@ -1,97 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap');
 @import url('https://fonts.cdnfonts.com/css/yeseva-one');
 
-@media screen and (max-width: 1299px) {
-    .container{
-        padding: 0px 18px !important;
-    }
-
-    .header-content{
-        height: 57px !important;
-    }
-        .logo{
-            margin: 0 !important;
-        }
-        .header-navigation{
-            display: none !important;
-        }
-        .number{
-            text-decoration-line: none !important;
-            color: #FFFFFF !important;
-        }
-        .request-a-call{
-            display: none !important;
-        }
-    .img-hero{
-        padding-top: 85px !important;
-        height: 476px !important;
-    }
-        .img-hero-content{
-            display: flex;
-            flex-direction: column;
-        }
-            .Turnkey-Repair{
-                font-size: 23px !important;
-                line-height: 30.55px !important; 
-            }
-            .text1-p{
-                margin: 0 !important;
-                line-height: 19.02px !important;
-            }
-                .br{
-                    display: none !important;
-                }
-            .caculate-the-cost{
-                margin-top: 32px;
-            }
-            .submit-your-application{
-                margin: 26px 0px 0px 0px !important;
-            }
-    .black-background{
-        height: 1553px !important;
-    }
-        .pre-container-completed-projects{
-            flex-direction: column;
-            align-items: center;
-        }
-            .title-Completed-projects{
-                padding-top: 36px !important;
-                text-align: center;
-                font-size: 22px !important;
-            }
-            .text2{
-                text-align: center;
-                padding-top: 0px !important;
-                margin-top: 22px !important;
-                line-height: 17.43px !important;
-                height: 86px;
-            }
-            .mobile-image-completed-projects{
-                display: flex !important;
-            }
-            .characteristics-completed-projects{
-                padding: 0px !important;
-            }
-                .characteristics2{
-                    height: 139px;
-                }
-                    .title3{
-                        margin: 0px 0px 11px;
-                        font-size: 14px !important;
-                        line-height: 19.4px !important;
-                    }
-                    .text3{
-                        font-size: 11px;
-                        line-height: 14.94px !important;
-                    }
-        .completed-projects-navigation-and-img{
-            display: none !important;
-        }
-        .completed-projects-navigation-arrows{
-            display: none !important;
-        }
-}
-
 body{
     margin: 0;
     font-family: 'Nunito Sans', sans-serif;
@@ -383,6 +292,7 @@ main{
                     .img-completed-projects{
                         padding-top: 47px;
                     }
+
     .online-conrol-margin{
         margin-top: -416px;
     }
@@ -391,6 +301,9 @@ main{
             margin: 0 auto;
             display: flex;
             flex-direction: column;
+        }
+        .online-conrol-mobile{
+            display: none ;
         }
             .title-online-control{
                 font-size: 20px;
@@ -1040,3 +953,157 @@ main{
     .footer-content{
         height: 133px;
     }
+
+
+    @media screen and (max-width: 1299px) {
+        .container{
+            padding: 0px 18px;
+        }
+    
+        .header-content{
+            height: 57px;
+        }
+            .logo{
+                margin: 0;
+            }
+            .header-navigation{
+                display: none;
+            }
+            .number{
+                text-decoration-line: none;
+                color: #FFFFFF;
+            }
+            .request-a-call{
+                display: none;
+            }
+        .img-hero{
+            padding-top: 85px;
+            height: 476px ;
+        }
+            .img-hero-content{
+                display: flex;
+                flex-direction: column;
+            }
+                .Turnkey-Repair{
+                    font-size: 23px;
+                    line-height: 30.55px; 
+                }
+                .text1-p{
+                    margin: 0;
+                    line-height: 19.02px;
+                }
+                    .br{
+                        display: none;
+                    }
+                .caculate-the-cost{
+                    margin-top: 32px;
+                }
+                .submit-your-application{
+                    margin: 26px 0px 0px 0px;
+                }
+        .black-background{
+            height: 1553px;
+        }
+            .pre-container-completed-projects{
+                flex-direction: column;
+                align-items: center;
+            }
+                .title-Completed-projects{
+                    padding-top: 36px;
+                    text-align: center;
+                    font-size: 22px;
+                    line-height: 30.49px;
+                }
+                .text2{
+                    text-align: center;
+                    padding-top: 0px;
+                    margin-top: 22px;
+                    line-height: 17.43px;
+                    height: 86px;
+                }
+                .mobile-image-completed-projects{
+                    display: flex;
+                }
+                .characteristics-completed-projects{
+                    padding: 0px;
+                }
+                    .characteristics2{
+                        height: 139px;
+                    }
+                        .title3{
+                            margin: 0px 0px 11px;
+                            font-size: 14px;
+                            line-height: 19.4px;
+                        }
+                        .text3{
+                            font-size: 11px;
+                            line-height: 14.94px;
+                        }
+            .completed-projects-navigation-and-img{
+                display: none;
+            }
+            .completed-projects-navigation-arrows{
+                display: none;
+            }
+        .online-control{
+            display: none;
+        }
+        .online-conrol-mobile{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+            .title-online-control{
+                margin: 58px 0px 19px;
+                font-size: 22px;
+                line-height: 30.49px;
+            }
+            .online-control-videocamera{
+                margin-bottom: 40px;
+            }
+            .online-control-video{
+                margin: 0;
+                width: 100%;
+                height: 207px;
+            }
+                .play{
+                    display: flex;
+                    margin: 0 auto;
+                    position: static;
+                    width: 88px;
+                }
+            .paragrapf-stick{
+                margin: 28px auto 21px;
+            }
+            .text4{
+                font-size: 11px;
+                line-height: 18.68px;
+                color: #FFFFFF;
+                margin: 0;
+                height: 106px;
+            }
+            .name-number-container{
+                padding: 61px 0px 0px;
+            }
+                .Name{
+                    color: #FFFFFF80;
+                }
+                .input-name-and-number{
+                    background-color: #131313;
+                    border-bottom: 1px solid #FFFFFF;
+                    color: #FFFFFF;
+                    width: 100%;
+                }
+                    .input-name-and-number::placeholder{
+                        color: #FFFFFF;
+                    }
+                .first-checkbox{
+                    margin-top: 26px;
+                }
+                    .text{
+                        color: #FFFFFF;
+                    }
+                .submit{
+                    width: 50%;
+                    margin: 80px auto 0px;
+                }

@@ -30,6 +30,10 @@
             display: flex;
             flex-direction: column;
         }
+            .Turnkey-Repair{
+                font-size: 23px !important;
+                line-height: 30.55px !important; 
+            }
             .text1-p{
                 margin: 0 !important;
                 line-height: 19.02px !important;
@@ -53,6 +57,7 @@
             .title-Completed-projects{
                 padding-top: 36px !important;
                 text-align: center;
+                font-size: 22px !important;
             }
             .text2{
                 text-align: center;

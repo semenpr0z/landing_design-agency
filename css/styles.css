@@ -90,6 +90,9 @@ body * {
                     font-size: 11px;
                     line-height: 15px;
                 }
+                .selected-menu{
+                    color: #E3B873;
+                }
                     .header-navigation_link:hover{
                         color: #E3B873;
                     }
@@ -1013,7 +1016,7 @@ main{
                     margin: 26px 0px 0px 0px;
                 }
         .black-background{
-            height: 1553px;
+            height: 100%;
         }
             .pre-container-completed-projects{
                 flex-direction: column;
@@ -1073,9 +1076,9 @@ main{
                 margin-bottom: 40px;
             }
             .online-control-video{
-                margin: 0;
-                width: 100%;
-                height: 207px;
+                margin: 0 auto;
+                max-width: 100%;
+                
             }
                 .play{
                     display: flex;
@@ -1250,3 +1253,4 @@ main{
         .footer{
             display: none;
         }
+    }

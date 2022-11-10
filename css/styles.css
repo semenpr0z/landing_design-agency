@@ -112,9 +112,6 @@ body * {
             text-transform: uppercase;
             box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
         }
-main{
-
-}
     .img-hero{
         background-image: url('../images/image-hero.jpg');
         background-size: cover;
@@ -168,9 +165,6 @@ main{
             background-color: #131313;
             height: 1074px;
         }
-        .completed-projects{
-              
-        }
             .completed-projects-navigation{
                 display: flex;
                 padding-top: 107px;
@@ -196,9 +190,6 @@ main{
                 display: flex;
                 justify-content: space-between;
             }
-                .text-completed-projects{
-
-                }
                     .title-Completed-projects{
                         font-size: 27px;
                         line-height: 37px;
@@ -244,9 +235,6 @@ main{
                         padding-top: 42px;
                         padding-bottom: 73px;
                     }
-                        .characteristic{
-                            
-                        }
                             .characteristics2{
                                 display: flex;
                                 flex-direction: column;
@@ -273,20 +261,11 @@ main{
                         display: flex;
                         justify-content: space-between;
                         }
-                        .arrow{
-                                        
-                        }
                         .completed-projects-navigation-arrows-rectangles{
                             display: flex;
                             min-width: 83px;
                             justify-content: space-between;
-                        }
-                            .rectangle{
-                                
-                            }
-                .completed-projects-navigation-and-img{
-
-                }                
+                        }               
                     .completed-projects-navigation{
                         display: flex;
                         padding-top: 107px;
@@ -349,9 +328,6 @@ main{
                     width: 168px;
                     left: calc(50% - 168px/2);
                 }
-            .paragrapf{
-                
-            }
                 .paragrapf-stick{
                     
                     margin: 31px auto 34px auto;
@@ -551,10 +527,7 @@ main{
                                 display: flex;
                                 align-items: center;
                                 padding-left: 13px;
-                            }
-                .container-request-and-symbol{
-
-                }            
+                            }      
                     .request{
                         display: flex;
                         flex-direction: column;
@@ -826,9 +799,6 @@ main{
                                 color: #181818;
                                 padding-left: 23px;
                             }
-                        .clients-container-item-text{
-
-                        }
                             .clients-container-item-text-p{
                                 font-family: 'Nunito Sans';
                                 font-weight: 400;
@@ -1156,10 +1126,6 @@ main{
                 display: flex;
                 justify-content: center;
             }
-            
-                .types-of-repair-catalog-item-container{
-                    
-                }
                 .types-of-repair-catalog-item1{
                     width: 340px;
                 }

@@ -1181,8 +1181,9 @@ body * {
                 .image-mobile{
                     position: relative;
                     display: flex;
-                    transform: translate(0, 50%);
-                    margin-top: -370px;
+                }
+                .slider{
+                    background: linear-gradient(#FFFFFF 50%, #131313 50%);
                 }
                     .image-mobile2{
                         width: 100%;
@@ -1204,7 +1205,7 @@ body * {
             
         }
         .contacts-and-map-container{
-            margin-top: 460px;
+            margin-top: 52px;
         }
             .have-any-questions-title{
                 margin: 0;
@@ -1258,20 +1259,4 @@ body * {
         }
     }
 
-    @media screen and (max-width: 1150px) {
-        .image-mobile{
-            margin-top: -250px;
-        }
-        .contacts-and-map-container{
-            margin-top: 389px;
-        }
-    }
-
-    @media screen and (max-width: 800px) {
-        .image-mobile{
-            margin-top: -217px;
-        }
-        .contacts-and-map-container{
-            margin-top: 257px;
-        }
-    }
+    

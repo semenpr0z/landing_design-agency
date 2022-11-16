@@ -680,6 +680,9 @@ body * {
                             padding-top: 137px;
                             margin: 0;
                         }
+                        .wildest-fantasies1-mobile{
+                            display: none;
+                        }
                         .wildest-fantasies-list{
                             list-style: none;
                             padding: 0;

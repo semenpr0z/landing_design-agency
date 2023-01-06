@@ -173,6 +173,17 @@ body * {
                 max-width: 623px;
                 justify-content: space-between;
             }
+            .slider__images{
+                margin-top: 45px;
+            }
+                .image{
+                    opacity: 0;
+                    position: absolute;
+                    transition: opacity 800ms ease;
+                }
+                    .image.active{
+                        opacity: 1;
+                    }
                 .main-completed-projects-item{
                     font-family: 'Yeseva One', sans-serif;
                     font-weight: 400;
@@ -181,7 +192,7 @@ body * {
                     text-transform: uppercase;
                     color: rgba(255, 255, 255, 0.3);
                 }
-                    .selected{
+                    .main-completed-projects-item.active{
                         padding-bottom: 6px;
                         border-bottom: 1px solid #E3B873;
                         color: #E3B873 !important;
@@ -233,7 +244,7 @@ body * {
                         display: flex;
                         justify-content: space-between;
                         padding-top: 42px;
-                        padding-bottom: 73px;
+                        padding-bottom: 70px;
                     }
                             .characteristics2{
                                 display: flex;
@@ -257,15 +268,30 @@ body * {
                                 }
                     .completed-projects-navigation-arrows{
                         max-width: 275px;
-                        max-height: 13px;
+                        
                         display: flex;
                         justify-content: space-between;
                         }
-                        .completed-projects-navigation-arrows-rectangles{
+                        .arrow-inner{
+                            height: 15px;
+                            cursor: pointer;
+                        }
+                            .slider__dots{
                             display: flex;
                             min-width: 83px;
                             justify-content: space-between;
-                        }               
+                        }
+                            .slider__dots-item{
+                                width: 9.57px;
+                                height: 9.57px;
+                                border-radius: 30px;
+                                background-color: #FFFFFF4D;
+                                cursor: pointer;
+                                transition: background 0.4s ease;
+                            }
+                                .slider__dots-item:hover, .slider__dots-item.active {
+                                    background: #FFFFFF;
+                                  }
                     .completed-projects-navigation{
                         display: flex;
                         padding-top: 107px;
@@ -281,7 +307,8 @@ body * {
                                 line-height: 19px;
                                 text-transform: uppercase;
                                 color: rgba(255, 255, 255, 0.3);
-                                }        
+                                cursor: pointer;
+                                }
                     .img-completed-projects{
                         padding-top: 47px;
                     }

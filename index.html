@@ -61,7 +61,7 @@
                             <p class="text2">Only a small part of the work performed by our company is presented<br> on the site. For 14 years on in the construction<br> 
                                 market we have made happy more than 1000 families</p>
                             <div class="mobile-image-completed-projects">
-                                <img src="images/image-completed-projects2.jpg" alt="" class="mobile-image-completed-projects2">
+                                <img src="images/image-completed-projects2.png" alt="" class="mobile-image-completed-projects2">
                                 <div class="ellipses">
                                     <img src="images/ellipse-left.svg" alt="Left" class="ellipse-right-left">
                                     <img src="images/ellipse-right.svg" alt="Right" class="ellipse-right-left">
@@ -89,23 +89,19 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="completed-projects-navigation-arrows">
-                                <img src="images/arrow.svg" class="completed-projects-navigation-arrows arrow" alt="arrow">
-                                <div class="completed-projects-navigation-arrows-rectangles">
-                                    <img src="images/Rectangle.svg" class="completed-projects-navigation-arrows rectangle" alt="rectangle">
-                                    <img src="images/Rectangle 1.svg" class="completed-projects-navigation-arrows rectangle" alt="rectangle">
-                                    <img src="images/Rectangle 1.svg" class="completed-projects-navigation-arrows rectangle" alt="rectangle">
+                            <div class="completed-projects-navigation-arrows slider__arrows">
+                                <div class="arrow-inner slider__arrow left">
+                                    <img src="images/arrow.svg" class="completed-projects-navigation-arrows" alt="arrow">
                                 </div>
-                                <img src="images/arrow-reverse.svg" class="completed-projects-navigation-arrows arrow" alt="arrow">
-                            </div> 
+                                <div class="slider__dots"></div>
+                                <div class="arrow-inner slider__arrow right">
+                                    <img src="images/arrow-reverse.svg" class="completed-projects-navigation-arrows" alt="arrow">
+                                </div>
+                            </div>
                         </div>
                         <div class="completed-projects-navigation-and-img">
-                            <nav class="completed-projects-navigation">
-                                <li class="main-completed-projects-item selected">Rostov-on-Don, Admiral</li>
-                                <li class="main-completed-projects-item">Sochi Thieves</li>
-                                <li class="main-completed-projects-item">Rostov-on-Don Patriotic</li>
-                            </nav>
-                            <img src="images/image-completed-projects.png" alt="chairs" class="img-completed-projects">
+                            <nav class="completed-projects-navigation slider__city"></nav>
+                            <div class="slider__images"></div>
                         </div>
                     </div>
                 </div>
@@ -149,7 +145,7 @@
                             </label>
                         </div>
                         <input type="submit" class="button-light submit submit-transform" value="SUBMIT">
-                    </div>   
+                    </div>
                 </div>
             </div>
         </section>
@@ -598,5 +594,6 @@
             </button>
         </div>
     </footer>
+    <script src="js/script_slider.js"></script>
 </body>
 </html>

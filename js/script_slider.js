@@ -25,16 +25,19 @@ function initSlider() {
   if(!images || !images.length) return;
 
   let sliderImages = document.querySelector(".slider__images");
+  let sliderImagesMobile = document.querySelector(".slider__imagesMobile")
   let sliderArrows = document.querySelector(".slider__arrows");
-  let sliderDots = document.querySelector(".slider__dots")
-  let sliderCity = document.querySelector(".slider__city")
-  let sliderCityProperty = document.querySelector(".slider__cityProperty")
-  let sliderApartmentProperty = document.querySelector(".slider__apartmentProperty")
-  let sliderTimeProperty = document.querySelector(".slider__timeProperty")
-  let sliderCostProperty = document.querySelector(".slider__costProperty")
+  let sliderArrowsMobile = document.querySelector(".slider__ellipses");
+  let sliderDots = document.querySelector(".slider__dots");
+  let sliderCity = document.querySelector(".slider__city");
+  let sliderCityProperty = document.querySelector(".slider__cityProperty");
+  let sliderApartmentProperty = document.querySelector(".slider__apartmentProperty");
+  let sliderTimeProperty = document.querySelector(".slider__timeProperty");
+  let sliderCostProperty = document.querySelector(".slider__costProperty");
 
   initImages();
   initArrows();
+  initArrowsMobile();
   initDots();
   initCity();
 
@@ -42,6 +45,9 @@ function initSlider() {
     images.forEach((image, index) => {
       let imageDiv = `<img class="image n${index} ${index === 0? "active" : ""}" src="${images[index].url}" data-index="${index}">`;
       sliderImages.innerHTML += imageDiv;
+
+      let imageDivMobile = `<img src="${images[index].url}" alt="" class="mobile-image-completed-projects2 image n${index} ${index === 0? "active" : ""}" src="${images[index].url}"></img>`;
+      sliderImagesMobile.innerHTML += imageDivMobile;
 
       let dot = `<div class="slider__dots-item n${index} ${index === 0? "active" : ""}" data-index="${index}"></div>`;
       sliderDots.innerHTML += dot;
@@ -79,6 +85,23 @@ function initSlider() {
     })
   }
 
+  //мобильная версия стрелок
+  function initArrowsMobile() {
+    sliderArrowsMobile.querySelectorAll(".slider__arrow",).forEach(arrow => {
+      arrow.addEventListener("click", function() {
+        let curNumber = +sliderImages.querySelector(".active").dataset.index;
+        let nextNumber;
+        if (arrow.classList.contains("left")) {
+          nextNumber = curNumber === 0? images.length - 1 : curNumber - 1;
+        } else {
+          nextNumber = curNumber === images.length - 1? 0 : curNumber + 1;
+        }
+        moveSlider(nextNumber);
+      });
+    })
+  }
+
+
   function initDots() {
     sliderDots.querySelectorAll(".slider__dots-item").forEach(dot => {
       dot.addEventListener("click", function() {
@@ -104,6 +127,9 @@ function initSlider() {
     sliderImages.querySelector(".active").classList.remove("active");
     sliderImages.querySelector(".n" + num).classList.add("active");
 
+    sliderImagesMobile.querySelector(".active").classList.remove("active");
+    sliderImagesMobile.querySelector(".n" + num).classList.add("active");
+
     sliderDots.querySelector(".active").classList.remove("active");
     sliderDots.querySelector(".n" + num).classList.add("active");
 
@@ -125,3 +151,6 @@ function initSlider() {
 }
 
 document.addEventListener("DOMContentLoaded", initSlider);
+
+
+// решил допилить слайдер до мобильной версии, долго пыхтел, но так до идеала и не получилось довести. при переключении с 3 слайда на 1 слайд в мобильной версии верстка ненадолго глючит и справа от слайдера появлятся вторая картинка, если вам не трудно объясните пожалуйста как это пофиксить.

@@ -167,7 +167,8 @@ body * {
         }
             .completed-projects-navigation{
                 display: flex;
-                padding-top: 107px;
+                margin-top: 107px;
+                height: 27px;
                 list-style: none;
                 min-width: 623px;
                 max-width: 623px;
@@ -191,6 +192,7 @@ body * {
                     line-height: 19px;
                     text-transform: uppercase;
                     color: rgba(255, 255, 255, 0.3);
+                    transition: 0.4s;
                 }
                     .main-completed-projects-item.active{
                         padding-bottom: 6px;
@@ -244,7 +246,7 @@ body * {
                         display: flex;
                         justify-content: space-between;
                         padding-top: 42px;
-                        padding-bottom: 70px;
+                        padding-bottom: 50px;
                     }
                             .characteristics2{
                                 display: flex;
@@ -265,10 +267,15 @@ body * {
                                     font-size: 13px;
                                     line-height: 21px;
                                     color: #FFFFFF;
+                                    opacity: 0;
+                                    position: absolute;
                                 }
+                                    .text3.active{
+                                        opacity: 1;
+                                        position: static;
+                                    }
                     .completed-projects-navigation-arrows{
                         max-width: 275px;
-                        
                         display: flex;
                         justify-content: space-between;
                         }
@@ -292,14 +299,7 @@ body * {
                                 .slider__dots-item:hover, .slider__dots-item.active {
                                     background: #FFFFFF;
                                   }
-                    .completed-projects-navigation{
-                        display: flex;
-                        padding-top: 107px;
-                        list-style: none;
-                        min-width: 623px;
-                        max-width: 623px;
-                        justify-content: space-between;
-                        }
+                    
                             .main-completed-projects-item{
                                 font-family: 'Yeseva One', sans-serif;
                                 font-weight: 400;

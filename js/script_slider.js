@@ -37,15 +37,29 @@ function initSlider() {
   initArrows();
   initDots();
   initCity();
-  initCityProperty();
-  initApartmentProperty();
-  initTimeProperty();
-  initCostProperty();
 
   function initImages() {
     images.forEach((image, index) => {
       let imageDiv = `<img class="image n${index} ${index === 0? "active" : ""}" src="${images[index].url}" data-index="${index}">`;
       sliderImages.innerHTML += imageDiv;
+
+      let dot = `<div class="slider__dots-item n${index} ${index === 0? "active" : ""}" data-index="${index}"></div>`;
+      sliderDots.innerHTML += dot;
+
+      let city = `<li class="main-completed-projects-item n${index} ${index === 0? "active" : ""}" data-index="${index}">${images[index].cityMain}</li>`;
+      sliderCity.innerHTML += city;
+
+      let cityProperty = `<span class="text3 n${index} ${index === 0? "active" : ""}" data-index="${index}">${images[index].city}</span>`;
+      sliderCityProperty.innerHTML += cityProperty;
+
+      let apartmentProperty = `<span class="text3 n${index} ${index === 0? "active" : ""}" data-index="${index}">${images[index].apartment}</span>`;
+      sliderApartmentProperty.innerHTML += apartmentProperty;
+
+      let timeProperty = `<span class="text3 n${index} ${index === 0? "active" : ""}" data-index="${index}">${images[index].time}</span>`;
+      sliderTimeProperty.innerHTML += timeProperty;
+
+      let costProperty = `<span class="text3 n${index} ${index === 0? "active" : ""}" data-index="${index}">${images[index].cost}</span>`;
+      sliderCostProperty.innerHTML += costProperty;
     });
   }
 
@@ -66,10 +80,6 @@ function initSlider() {
   }
 
   function initDots() {
-    images.forEach((image, index) => {
-      let dot = `<div class="slider__dots-item n${index} ${index === 0? "active" : ""}" data-index="${index}"></div>`;
-      sliderDots.innerHTML += dot;
-    });
     sliderDots.querySelectorAll(".slider__dots-item").forEach(dot => {
       dot.addEventListener("click", function() {
         moveSlider(this.dataset.index);
@@ -80,10 +90,6 @@ function initSlider() {
   }
 
   function initCity() {
-    images.forEach((image, index) => {
-      let city = `<li class="main-completed-projects-item n${index} ${index === 0? "active" : ""}" data-index="${index}">${images[index].cityMain}</li>`;
-      sliderCity.innerHTML += city;
-    });
     sliderCity.querySelectorAll(".main-completed-projects-item").forEach(city => {
       city.addEventListener("click", function() {
         moveSlider(this.dataset.index);
@@ -93,33 +99,6 @@ function initSlider() {
     })
   }
 
-  function initCityProperty() {
-    images.forEach((image, index) => {
-      let cityProperty = `<span class="text3 n${index} ${index === 0? "active" : ""}" data-index="${index}">${images[index].city}</span>`;
-      sliderCityProperty.innerHTML += cityProperty;
-    });
-  }
-
-  function initApartmentProperty() {
-    images.forEach((image, index) => {
-      let apartmentProperty = `<span class="text3 n${index} ${index === 0? "active" : ""}" data-index="${index}">${images[index].apartment}</span>`;
-      sliderApartmentProperty.innerHTML += apartmentProperty;
-    });
-  }
-
-  function initTimeProperty() {
-    images.forEach((image, index) => {
-      let timeProperty = `<span class="text3 n${index} ${index === 0? "active" : ""}" data-index="${index}">${images[index].time}</span>`;
-      sliderTimeProperty.innerHTML += timeProperty;
-    });
-  }
-
-  function initCostProperty() {
-    images.forEach((image, index) => {
-      let costProperty = `<span class="text3 n${index} ${index === 0? "active" : ""}" data-index="${index}">${images[index].cost}</span>`;
-      sliderCostProperty.innerHTML += costProperty;
-    });
-  }
 
   function moveSlider(num) {
     sliderImages.querySelector(".active").classList.remove("active");

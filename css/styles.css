@@ -231,8 +231,9 @@ body * {
                             width: 100%;
                             height: auto;
                         }
-                            .mobile-image-completed-projects2.active{
-                                position: static;
+                            .slider__imagesMobile{
+                                width: 1062px;
+                                height: 761px;
                             }
                             .ellipses{
                                 position: absolute;

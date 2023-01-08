@@ -231,6 +231,9 @@ body * {
                             width: 100%;
                             height: auto;
                         }
+                            .mobile-image-completed-projects2.active{
+                                position: static;
+                            }
                             .ellipses{
                                 position: absolute;
                                 display: flex;
@@ -241,6 +244,7 @@ body * {
                             }
                                 .ellipse-right-left{
                                     width: 36px;
+                                    cursor: pointer;
                                 }
                     .characteristics-completed-projects{
                         display: flex;
